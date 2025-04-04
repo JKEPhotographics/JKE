@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secondary Photos - Jake Howley</title>
+    <link rel="stylesheet" href="Website.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script>
+        function checkPassword() {
+            const validPasswords = ["JJLCMPS", "Jake2009!5!4", "vz$jk$mEDZ5At", "dekmeq-simqer-kItje9", "a"]; // Add multiple passwords here
+            const userInput = prompt("Enter the password to view this page:");
+            
+            if (!validPasswords.includes(userInput)) {
+                alert("Incorrect password. Redirecting to homepage.");
+                window.location.href = "Photograph Portfolio.html";
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+    <header>
+        <img src="Logo.png" width="80" height="80"><h1>Secondary Photos</h1>
+        <nav>
+            <ul>
+                <li><a href="Photograph Portfolio.html">Home</a></li>
+                <li><a href="Photo Page.html">Gallery</a></li>
+                <li><a href="Secondary Photo Page.html">All Photos</a></li>
+                <li><a href="Contact Page.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="photo-grid">
+        <div class="photo-grid-item">
+        <img src="Pictures\Camera Roll\Photos Task 1\Good Photos\5 Photos/Image4.JPG" alt="Tree with Sunlight" width="345.6" height="518.4">
+        </div>
+        <div class="photo-grid-item">
+        <img src="Pictures/Camera Roll/Photos Task 1/Good Photos/_MG_2092.JPG" alt="Vines On Brick Walls">
+        </div>
+        <div class="photo-grid-item">
+        <img src="Pictures/Camera Roll/Photos Task 2/Used/_MG_2113.JPG" alt="Ants View Of A Tree">
+        </div>
+        <div class="photo-grid-item">
+        <img src="Pictures/Camera Roll/Photos Task 2/Used/_MG_2116.JPG" alt="Repeating Structure">
+        </div>
+    </div>
+    <h1><a href="https://drive.google.com/drive/folders/1mjefav4znFfRlvCX98St0ncvorZgXTXP?usp=drive_link">All My Photos Here</a>←←←</h1>
+    
+    <footer>
+        <p>Photos Taken By Jake Howley | Website Designed By Jake Howley</p>
+    </footer>
+</body>
+</html>
